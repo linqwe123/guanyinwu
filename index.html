@@ -1162,6 +1162,7 @@ Config.saves.autosave = ["autosave"];</script><tw-tag name="nobr" color="yellow"
 
 @@.delayed;[[起床|寢室]]@@</tw-passagedata><tw-passagedata pid="3" name="寢室" tags="nobr" position="825,425" size="100,100">你起居的地方，十分簡樸。&lt;br&gt;
 &#39;&#39;行動點：&#39;&#39; &lt;&lt;do&gt;&gt;$xingdong&lt;&lt;/do&gt;&gt;&lt;br&gt;
+&#39;&#39;靈感：&#39;&#39; &lt;&lt;do&gt;&gt;$linggan&lt;&lt;/do&gt;&gt;&lt;br&gt;
 一張&lt;&lt;link &quot;床&quot;&gt;&gt;&lt;&lt;replace &quot;#nextline&quot;&gt;&gt;你要：&lt;br&gt;
 &lt;span id=&quot;restOptions&quot;&gt;
 &lt;&lt;link &quot;小歇&quot;&gt;&gt;&lt;&lt;replace &quot;#restOptions&quot;&gt;&gt;
@@ -1257,7 +1258,8 @@ Config.saves.autosave = ["autosave"];</script><tw-tag name="nobr" color="yellow"
 [[後山]]
 
 &lt;br&gt;
-[[返回|大殿]] </tw-passagedata><tw-passagedata pid="7" name="客房" tags="" position="1025,525" size="100,100">
+[[返回|大殿]] </tw-passagedata><tw-passagedata pid="7" name="客房" tags="" position="1025,525" size="100,100">許久未有人居住，屋裡空蕩蕩的。你定期就會清理一次，倒也沒落什麼灰塵。
+
 [[返回|大殿]]</tw-passagedata><tw-passagedata pid="8" name="中庭" tags="" position="1025,425" size="100,100">
 
 [[門外]]
@@ -1316,7 +1318,14 @@ Config.saves.autosave = ["autosave"];</script><tw-tag name="nobr" color="yellow"
 [[返回|大殿]] </tw-passagedata><tw-passagedata pid="14" name="屬性" tags="" position="800,150" size="100,100">&#39;&#39;屬性&#39;&#39;
 --
 姓名：左卿
-&lt;&lt;do&gt;&gt;行動點：$xingdong&lt;&lt;/do&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="記憶" tags="nobr" position="700,150" size="100,100">&#39;&#39;記憶&#39;&#39;&lt;br&gt;
+&lt;&lt;do&gt;&gt;
+行動點：$xingdong
+靈感：$linggan
+醫學：$yixue 
+藥學：$yaoxue
+劍術：$jianshu
+身法：$shenfa
+&lt;&lt;/do&gt;&gt;</tw-passagedata><tw-passagedata pid="15" name="記憶" tags="nobr" position="700,150" size="100,100">&#39;&#39;記憶&#39;&#39;&lt;br&gt;
 --&lt;br&gt;
 &lt;&lt;do&gt;&gt;
 &lt;&lt;if $log.length is 0&gt;&gt;
